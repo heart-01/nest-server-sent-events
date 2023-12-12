@@ -6,7 +6,7 @@ interface MessageEvent {
   data: string | object;
 }
 
-@Controller()
+@Controller('api')
 export class EventsController {
   constructor(private readonly eventsService: EventsService) {}
 
